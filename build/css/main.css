@@ -245,6 +245,12 @@ ul, ol {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1280px) {
+  .features {
+    background-image: none;
+  }
+}
+
 .features__title {
   margin-bottom: 120px;
   font-size: 4rem;
@@ -255,6 +261,24 @@ ul, ol {
 
 .features__list {
   max-width: 500px;
+}
+
+@media screen and (max-width: 1280px) {
+  .features__list {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .features__list {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features__list {
+    max-width: 650px;
+  }
 }
 
 .features__item {
@@ -297,4 +321,194 @@ ul, ol {
   color: #9499a2;
   font-size: 1.4rem;
   line-height: 22px;
+}
+
+@media screen and (max-width: 1280px) {
+  .features {
+    align-items: center;
+  }
+}
+
+.testimonials {
+  padding: 120px 0;
+  background: url("../img/testimonials-bg.png") no-repeat center;
+}
+
+.testimonials__item {
+  max-width: 730px;
+}
+
+.testimonials__title {
+  margin-bottom: 120px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2d394c;
+}
+
+.testimonials__item-header {
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #2d394c;
+}
+
+.testimonials__item-header::before {
+  content: '';
+  display: block;
+  margin-right: 20px;
+  width: 65px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/clouds.png");
+}
+
+.testimonials__item-description {
+  padding-left: 20px;
+  color: #9499a2;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 3.2rem;
+}
+
+.page-footer__top {
+  padding: 30px;
+  background: #FFF;
+}
+
+.page-footer__title {
+  color: #2d394c;
+  font-size: 4rem;
+  margin-bottom: 2.6rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page-footer__description {
+  margin-bottom: 5rem;
+  font-size: 2.4rem;
+  font-weight: lighter;
+  color: #5a626e;
+  font-style: italic;
+  text-align: center;
+}
+
+.page-footer__input-field {
+  display: flex;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 500px) {
+  .page-footer__input-field {
+    flex-direction: column;
+  }
+}
+
+.page-footer__email {
+  display: flex;
+  max-width: 54%;
+  margin-right: 35px;
+  margin-left: 15%;
+  margin-bottom: 50px;
+  padding: 20px 60px;
+  font-size: 1.8rem;
+  flex-grow: 1;
+  color: #2d394c;
+  background: #f7f7f7 url("../img/mail.png") no-repeat 22px 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.page-footer__email::placeholder {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 500px) {
+  .page-footer__email {
+    max-width: 90%;
+    margin: 0 0 20px;
+  }
+}
+
+.page-footer__btn {
+  display: flex;
+  max-width: 300px;
+  padding: 18px 6rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: #77c344;
+  border: none;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .page-footer__btn {
+    max-width: 90%;
+    margin: 0 0 20px;
+  }
+}
+
+.page-footer__bottom {
+  padding: 60px 0;
+  background-color: #DCDCDC;
+}
+
+@media screen and (max-width: 920px) {
+  .page-footer__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.page-footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+  .page-footer__nav {
+    flex-direction: column;
+  }
+}
+
+.page-footer__nav-list {
+  display: flex;
+  margin-left: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .page-footer__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.page-footer__nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .page-footer__nav-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.page-footer__nav-link {
+  font-size: 1.5rem;
+  color: #2d394c;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.page-footer__social-icons {
+  margin-right: 10%;
+  padding-left: 1rem;
+  border-left: 1px solid grey;
 }

@@ -3,6 +3,9 @@
   background-image: url(../img/macbook.png);
   background-position: right 70%;
   background-repeat: no-repeat;
+    @media screen and (max-width: 1280px) {
+      background-image: none;
+    }
 
 &__title {
     margin-bottom: 120px;
@@ -18,6 +21,15 @@
 
   &__list {
     max-width: 500px;
+    @media screen and (max-width: 1280px) {
+      max-width: 1000px;
+    }
+    @media screen and (max-width: 1024px) {
+      max-width: 850px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 650px;
+    }
   }
 
   &__item {
@@ -66,5 +78,8 @@
     color: $text-color;
     font-size: 1.4rem;
     line-height: 22px;
+  }
+  @media screen and (max-width: 1280px) {
+    align-items: center;
   }
 }

@@ -1,0 +1,43 @@
+.testimonials {
+  padding: 120px 0;
+  background: url("../img/testimonials-bg.png") no-repeat center;
+
+  &__item{
+    max-width: 730px;
+  }
+
+  &__title {
+    margin-bottom: 120px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: $title-color;
+
+    &::before {
+      content: '';
+      display: block;
+      margin-right: 20px;
+      width: 65px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("../img/clouds.png");
+    }
+  }
+
+  &__item-description {
+    padding-left: 20px;
+    color: $text-color;
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 3.2rem;
+  }
+}
